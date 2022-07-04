@@ -1,10 +1,10 @@
-#!/usr/bin/python3
-def max_integer(my_list=[]):
-    if len(my_list) == 0:
-        return None
 
-    max = my_list[0]
-    for x in my_list[1:]:
-        if x > max:
-            max = x
-    return max
+#!/usr/bin/python3
+def divisible_by_2(my_list=[]):
+    boolist = my_list[:]
+    for count, i in enumerate(my_list):
+        if i % 2 == 0:
+            boolist[count] = True
+        else:
+            boolist[count] = False
+    return(boolist)
